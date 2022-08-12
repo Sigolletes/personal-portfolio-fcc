@@ -1,0 +1,355 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: var(--color4);;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  
+  :root {
+    --color1: rgb(225, 14, 105);
+    --color2: rgb(36, 38, 41);
+    --color3: rgb(80, 103, 144);
+    --color4: rgb(234, 234, 201);
+  }
+  
+
+
+
+
+  #navbar {
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: var(--color1);
+    padding: 25px;
+    display: flex;
+    gap: 4%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  a {
+    text-decoration: none;
+    font-size: 20px;
+  }
+
+  
+
+
+  
+
+  #welcome-section {
+    background-color: var(--color2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  #welcome-section h1 {
+    font-size: 25px;
+    text-align: center;
+  }
+
+  #welcome-section p {
+    color: var(--color1);
+    font-style: italic;
+    text-align: center;
+  }
+  
+
+
+
+
+  .projects-box h2 {
+    text-align: center;
+    font-size: 20px;
+  }
+
+  .projects-box hr {
+    width: 90%;
+    border: 1px solid var(--color4);
+  }
+
+  .projects-box {
+    background-color: var(--color3);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 15px;
+    padding: 10% 3%;
+  }
+
+  #projects {
+    flex: initial;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    max-width: 1200px;
+    height: auto;
+  }
+  
+  .project {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    padding: 4%;
+    text-align: center;
+    width: 200px;
+    height: 130px;
+    margin: 3%;
+    border: 3px solid var(--color4);
+    border-style: double;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color2);
+  }
+
+  .project h3 {
+    font-size: 15px;
+    padding-bottom: 9px;
+  }
+
+  .project a {
+    font-size: 15px;
+  }
+
+  button {
+    background-color: var(--color1);
+    border: 1px solid var(--color4);
+    border-radius: 20px;
+    padding: 6px 22px;
+  }
+
+
+
+
+
+  #contact {
+    background-color: var(--color2);
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    padding: 30% 5%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  #contact h3 {
+    color: var(--color1);
+    font-size: 22px;
+    padding-bottom: 6px;
+  }
+
+  #contact div {
+    padding-top: 25px;
+    display: flex;
+    gap: 20px;
+  }
+
+  #contact a {
+    font-size: 15px;
+  }
+
+
+
+
+  footer {
+    background-color: var(--color2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 15% 4%;
+    gap: 15px;
+    border-top: 4px solid var(--color1);
+    border-style: double;
+    border-left: none;
+    border-right: none;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  @media (min-width: 600px) {
+
+
+    #navbar {
+      gap: 6%;
+      justify-content: flex-end;
+    }
+  
+    a {
+      font-size: 22px;
+    }
+
+    #welcome-section h1 {
+      font-size: 40px;
+    }
+  
+    #welcome-section p {
+      font-size: 25px;
+    }
+
+    .projects-box h2 {
+      font-size: 30px;
+      padding-bottom: 20px;
+    }
+
+
+
+    .projects-box {
+      gap: 30px;
+    }
+
+    #projects {
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+
+    .project {
+      min-width: 250px;
+      max-width: 400px;
+      height: 170px;
+      margin: 20px;
+    }
+  
+    .project h3 {
+      font-size: 15px;
+      padding-bottom: 9px;
+    }
+  
+    .project a {
+      font-size: 15px;
+    }
+  
+    button {
+      background-color: var(--color1);
+      border: 1px solid var(--color4);
+      border-radius: 20px;
+      padding: 6px 22px;
+    }
+
+
+
+
+    #contact {
+      gap: 4px;
+      padding: 18% 4%;
+    }
+  
+    #contact h3 {
+      font-size: 32px;
+      padding-bottom: 8px;
+    }
+  
+    #contact div {
+      padding-top: 35px;
+      gap: 40px;
+    }
+  
+    #contact a {
+      font-size: 23px;
+    }
+
+
+    footer {
+      padding: 8% 3%;
+      gap: 15px;
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  @media (min-width: 1150px) {
+
+
+    .project {
+      min-width: 300px;
+      max-width: 500px;
+      height: 190px;
+    }
+  
+    .project h3 {
+      font-size: 25px;
+      padding-bottom: 9px;
+    }
+  
+    .project a {
+      font-size: 20px;
+    }
+  
+    .projects-box button a {
+      font-size: 33px;
+      padding:  100px;
+    }
+
+
+    #contact {
+      gap: 6px;
+      padding: 8% 2%;
+    }
+
+    #contact div {
+      padding-top: 45px;
+      gap: 90px;
+    }
+  
+    #contact h3 {
+      font-size: 38px;
+    }
+  
+    #contact a {
+      font-size: 25px;
+      padding-top: 40px;
+    }
+
+    #contact p {
+      font-size: 20px;
+    }
+
+    footer {
+      padding: 4% 2%;
+      gap: 20px;
+      font-size: 17px;
+    }
+
+  }
